@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">koltin-koin</string>
+    <string name="title_detail">Detail Module</string>
+    <string name="title_search">Search Module</string>
+</resources>
