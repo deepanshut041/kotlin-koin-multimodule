@@ -1,2 +1,2 @@
-include ':app', ':domain', ':data', ':remote', ':local', ':detail', ':search'
+include ':app', ':domain', ':data', ':remote', ':local', ':detail', ':list'
 rootProject.name='koltin-koin'

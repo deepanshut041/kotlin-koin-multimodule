@@ -12,9 +12,9 @@
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/detail" />
             <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/list" />
             <option value="$PROJECT_DIR$/local" />
             <option value="$PROJECT_DIR$/remote" />
-            <option value="$PROJECT_DIR$/search" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

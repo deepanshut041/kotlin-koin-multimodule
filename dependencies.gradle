@@ -1,0 +1,38 @@
+ext {
+    appCompatVersion = '1.1.0'
+    constraintVersion = "1.1.3"
+    lifecycleVersion = "2.1.0"
+    ktxVersion = "1.1.0"
+    koinViewModelVersion = "2.0.1"
+    rxJavaVersion = "2.2.12"
+    rxAndroidVersion = "2.1.1"
+    rxKotlinVersion = "2.4.0"
+    retrofitVersion = "2.6.0"
+    okHttpVersion = "3.14.0"
+    koinVersion = "2.0.1"
+    navigationVersion = "2.1.0"
+    roomVersion = "2.2.0"
+    recyclerVersion = "1.0.0"
+
+    libs = [
+            appCompat         : "androidx.appcompat:appcompat:${appCompatVersion}",
+            constraintLayout  : "androidx.constraintlayout:constraintlayout:${constraintVersion}",
+            recyclerView      : "androidx.recyclerview:recyclerview:${recyclerVersion}",
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+            ktx               : "androidx.core:core-ktx:${ktxVersion}",
+            koinViewModel     : "org.koin:koin-android-viewmodel:${koinViewModelVersion}",
+            koin              : "org.koin:koin-android:${koinVersion}",
+            ktxViewModel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            ktxReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycleVersion",
+            rxJava2           : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxKotlin2         : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            rxAndroid2        : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            retrofit          : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitRxjava    : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            retrofitGson      : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            okHttp            : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogging     : "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            okHttpUrl         : "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}",
+
+    ]
+}
