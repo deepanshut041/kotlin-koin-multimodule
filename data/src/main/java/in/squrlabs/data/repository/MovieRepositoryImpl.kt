@@ -6,6 +6,8 @@ import `in`.squrlabs.local.adapter.MovieLocalAdapter
 import `in`.squrlabs.remote.adapter.MovieRemoteAdapter
 import io.reactivex.Completable
 import io.reactivex.Flowable
+import io.reactivex.Maybe
+import io.reactivex.Single
 
 class MovieRepositoryImpl(
     private val remote: MovieRemoteAdapter,
@@ -19,6 +21,10 @@ class MovieRepositoryImpl(
                     local.insertMovie(movieModel)
                 Completable.complete()
             }
+    }
+
+    override fun getMovie(id: Long): Maybe<MovieModel>{
+        return local.loadMovie(id)
     }
 
     override fun loadMovies(): Flowable<List<MovieModel>> {
