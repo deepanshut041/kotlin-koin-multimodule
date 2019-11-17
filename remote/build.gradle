@@ -32,6 +32,9 @@ dependencies {
     // Internal
     implementation project(":domain")
 
+    // Koin
+    implementation libs.koin
+
     // Okhttp
     implementation libs.okHttp
     implementation libs.okHttpUrl

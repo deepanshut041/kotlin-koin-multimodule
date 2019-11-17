@@ -33,20 +33,23 @@ data class MovieEntity(
     val backdropPath: String,
 
     @ColumnInfo(name = "popularity")
-    val popularity:Float,
+    val popularity: Float,
 
     @ColumnInfo(name = "vote_count")
-    val voteCount:Int,
+    val voteCount: Int,
 
     @ColumnInfo(name = "video")
-    val video:Boolean,
+    val video: Boolean,
 
     @ColumnInfo(name = "vote_average")
     val voteAverage: String,
 
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0 ) {
+    val id: Int = 0
+)
 
+
+object MovieEntityMapper {
     fun from(movieModel: MovieModel) = MovieEntity(
         posterPath = movieModel.posterPath,
         adult = movieModel.adult,
@@ -63,20 +66,21 @@ data class MovieEntity(
         id = movieModel.id
     )
 
-    fun to() = MovieModel(
-        posterPath = posterPath,
-        adult = adult,
-        overview = overview,
-        releaseDate = releaseDate,
-        originalTitle = originalTitle,
-        originalLanguage = originalLanguage,
-        title = title,
-        backdropPath = backdropPath,
-        popularity = popularity,
-        voteCount = voteCount,
-        video = video,
-        voteAverage = voteAverage,
-        id = id
+    fun to(movieEntity: MovieEntity) = MovieModel(
+        posterPath = movieEntity.posterPath,
+        adult = movieEntity.adult,
+        overview = movieEntity.overview,
+        releaseDate = movieEntity.releaseDate,
+        originalTitle = movieEntity.originalTitle,
+        originalLanguage = movieEntity.originalLanguage,
+        title = movieEntity.title,
+        backdropPath = movieEntity.backdropPath,
+        popularity = movieEntity.popularity,
+        voteCount = movieEntity.voteCount,
+        video = movieEntity.video,
+        voteAverage = movieEntity.voteAverage,
+        id = movieEntity.id
     )
+
 
 }

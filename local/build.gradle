@@ -33,6 +33,9 @@ dependencies {
     // Internal
     implementation project(":domain")
 
+    // Koin
+    implementation libs.koin
+
     // Room
     implementation libs.roomRuntime
     implementation libs.roomKtx
