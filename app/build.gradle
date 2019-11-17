@@ -46,9 +46,10 @@ dependencies {
     api libs.appCompat
     api libs.constraintLayout
     api libs.recyclerView
+    api libs.material
 
-    // Timber
-    api 'com.jakewharton.timber:timber:4.7.1'
+    // Fresco
+    api libs.fresco
 
 
     api(libs.rxAndroid2) {

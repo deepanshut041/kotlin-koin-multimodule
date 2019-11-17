@@ -1,6 +1,7 @@
 ext {
     appCompatVersion = '1.1.0'
     constraintVersion = "1.1.3"
+    materialVersion = "1.2.0-alpha01"
     lifecycleVersion = "2.1.0"
     ktxVersion = "1.1.0"
     koinViewModelVersion = "2.0.1"
@@ -13,10 +14,12 @@ ext {
     navigationVersion = "2.1.0"
     roomVersion = "2.2.0"
     recyclerVersion = "1.0.0"
+    frescoVersion = "1.13.0"
 
     libs = [
             appCompat         : "androidx.appcompat:appcompat:${appCompatVersion}",
             constraintLayout  : "androidx.constraintlayout:constraintlayout:${constraintVersion}",
+            material          : "com.google.android.material:material:${materialVersion}",
             recyclerView      : "androidx.recyclerview:recyclerview:${recyclerVersion}",
             kotlin            : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
             ktx               : "androidx.core:core-ktx:${ktxVersion}",
@@ -36,7 +39,7 @@ ext {
             roomRuntime       : "androidx.room:room-runtime:${roomVersion}",
             roomKtx           : "androidx.room:room-ktx:${roomVersion}",
             roomComplier      : "android.arch.persistence.room:compiler:${roomVersion}",
-            roomRxJava        : "androidx.room:room-rxjava2:${roomVersion}"
-
+            roomRxJava        : "androidx.room:room-rxjava2:${roomVersion}",
+            fresco            : "com.facebook.fresco:fresco:${frescoVersion}"
     ]
 }
