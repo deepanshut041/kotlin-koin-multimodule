@@ -33,6 +33,10 @@ ext {
             okHttp            : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
             okHttpLogging     : "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
             okHttpUrl         : "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}",
+            roomRuntime       : "androidx.room:room-runtime:${roomVersion}",
+            roomKtx           : "androidx.room:room-ktx:${roomVersion}",
+            roomComplier      : "android.arch.persistence.room:compiler:${roomVersion}",
+            roomRxJava        : "androidx.room:room-rxjava2:${roomVersion}"
 
     ]
 }

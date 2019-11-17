@@ -39,7 +39,6 @@ dependencies {
     api project(":domain")
 
     //Kotlin
-    api libs.kotlin
     api libs.ktx
     api libs.koinViewModel
 
@@ -51,12 +50,6 @@ dependencies {
     // Timber
     api 'com.jakewharton.timber:timber:4.7.1'
 
-    //RxJava
-    api libs.rxJava2
-    api(libs.rxKotlin2) {
-        exclude module: 'rxjava'
-        exclude module: 'kotlin-stdlib'
-    }
 
     api(libs.rxAndroid2) {
         exclude module: 'rxjava'

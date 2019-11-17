@@ -36,34 +36,13 @@ dependencies {
 
     // Internal
     implementation project(":domain")
+    implementation project(":local")
+    implementation project(":remote")
 
     //Kotlin
-    implementation libs.kotlin
     implementation libs.ktx
     implementation libs.koin
 
-    // Timber
-    implementation 'com.jakewharton.timber:timber:4.7.1'
-
-    // Okhttp
-//    implementation libs.okHttp
-//    implementation libs.okHttpUrl
-//    implementation libs.okHttpLogging
-
-    // Retrofit
-    implementation libs.retrofit
-    implementation libs.retrofitRxjava
-    implementation libs.retrofitGson
-
-    //RxJava
-    implementation libs.rxJava2
-    implementation(libs.rxKotlin2) {
-        exclude module: 'rxjava'
-        exclude module: 'kotlin-stdlib'
-    }
-    implementation(libs.rxAndroid2) {
-        exclude module: 'rxjava'
-    }
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

@@ -5,11 +5,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //Kotlin
-    implementation libs.kotlin
+    api libs.kotlin
 
     //RxJava
-    implementation libs.rxJava2
-    implementation(libs.rxKotlin2) {
+    api libs.rxJava2
+    api (libs.rxKotlin2) {
         exclude module: 'rxjava'
         exclude module: 'kotlin-stdlib'
     }
